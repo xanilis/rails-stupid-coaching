@@ -1,0 +1,14 @@
+
+<div>
+  <p id="coach"> You said: <p/>
+  "<%=@question%>"
+</div>
+
+<div>
+  <p id="coach"> Coach says: <p/>
+  "<%=@question.present? ? @answer : "You didn't type anything! Please try again."%>"
+</div>
+
+<div>
+  <p id="link"><%=link_to "Ask again!", ask_path%></p>
+</div>
